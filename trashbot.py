@@ -2,6 +2,7 @@ import requests
 from icalendar import Calendar
 from datetime import datetime, timedelta
 import time
+import os 
 
 def trash_today():
 
@@ -55,7 +56,7 @@ def send_telegram(message,TOKEN,CHAT_ID):
     requests.post(url, data=data)
     
 if __name__ == "__main__":
-    TOKEN = "..."
-    CHAT_ID = "..."
+    TOKEN = os.environ["TOKEN"]
+    CHAT_ID = os.environ["CHAT_ID"]
     check(TOKEN, CHAT_ID)
 
