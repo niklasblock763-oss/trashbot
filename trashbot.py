@@ -53,5 +53,9 @@ def send_telegram(message,TOKEN,CHAT_ID):
     }
 
     requests.post(url, data=data)
-
+    
+if __name__ == "__main__":
+    TOKEN = "..."
+    CHAT_ID = "..."
+    check(TOKEN, CHAT_ID)
 
