@@ -2,7 +2,7 @@ name: Trash Reminder Bot
 
 on:
   schedule:
-    - cron: "40 13 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
