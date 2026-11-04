@@ -52,11 +52,14 @@ def send_telegram(message,TOKEN,CHAT_ID):
         "chat_id": CHAT_ID,
         "text": message
     }
+    
 
     requests.post(url, data=data)
     
 if __name__ == "__main__":
     TOKEN = os.environ["TOKEN"]
     CHAT_ID = os.environ["CHAT_ID"]
+    CHAT_ID = os.environ["CHAT_ID2"]
     check(TOKEN, CHAT_ID)
+    check(TOKEN, CHAT_ID2)
 
