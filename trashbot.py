@@ -59,7 +59,7 @@ def send_telegram(message,TOKEN,CHAT_ID):
 if __name__ == "__main__":
     TOKEN = os.environ["TOKEN"]
     CHAT_ID = os.environ["CHAT_ID"]
-    CHAT_ID = os.environ["CHAT_ID2"]
+    CHAT_ID2 = os.environ["CHAT_ID2"]
     check(TOKEN, CHAT_ID)
     check(TOKEN, CHAT_ID2)
 
