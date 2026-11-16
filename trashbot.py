@@ -73,9 +73,9 @@ def check(TOKEN,CHAT_ID):
     bins = trash_today()
 
     if bins:
-        text = "Morgen wird abgeholt: " + ", ".join(bins)
-        send_telegram(text,TOKEN,CHAT_ID)
-    else:
+        #text = "Morgen wird abgeholt: " + ", ".join(bins)
+        #send_telegram(text,TOKEN,CHAT_ID)
+        
         text = "Test Gruppe Bismarckstraße"
         send_telegram(text,TOKEN,CHAT_ID)
         
@@ -84,9 +84,9 @@ def check2(TOKEN,CHAT_ID):
     bins = trash_today2()
 
     if bins:
-        text = "Morgen wird abgeholt: " + ", ".join(bins)
-        send_telegram(text,TOKEN,CHAT_ID)
-    else:
+        #text = "Morgen wird abgeholt: " + ", ".join(bins)
+        #send_telegram(text,TOKEN,CHAT_ID)
+        
         text = "Test Gruppe Unistraße"
         send_telegram(text,TOKEN,CHAT_ID)
         
