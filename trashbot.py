@@ -69,25 +69,22 @@ def trash_today2():
     return bins
 
 
-def check(TOKEN,CHAT_ID):
+def check(TOKEN,CHAT_ID): #Bismarck
     bins = trash_today()
 
     if bins:
-        #text = "Morgen wird abgeholt: " + ", ".join(bins)
-        #send_telegram(text,TOKEN,CHAT_ID)
-        
-        text = "Test Gruppe Bismarckstraße"
+        text = "Morgen wird abgeholt: " + ", ".join(bins)
         send_telegram(text,TOKEN,CHAT_ID)
-        
+                
 
-def check2(TOKEN,CHAT_ID):
+def check2(TOKEN,CHAT_ID): #Universitäts
     bins = trash_today2()
 
     if bins:
         #text = "Morgen wird abgeholt: " + ", ".join(bins)
         #send_telegram(text,TOKEN,CHAT_ID)
         
-        text = "Test Gruppe Unistraße"
+        text = "Hallo kann mir mal wer privat kurz schreiben ob diese Nachricht ankam? Wenn ja funktioniert der Bot jetzt"
         send_telegram(text,TOKEN,CHAT_ID)
         
 
